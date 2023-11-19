@@ -162,12 +162,10 @@
     <a href="code_link" class="btn" target="_blank">Code</a>
 
     <div class="overlay" id="overlay" onclick="closePopup()"></div>
-        <div class="popup" id="popup">
-        <p>supply : 999</p>
-        <p>price : 0.009 Eth</p>
-        <p>per Wallet : 10</p>
-        <p>price Reduces By 0.0025 Every 30Mins Until 0.001</p>
-        <p id="countdown">Countdown</p>
+    <div class="popup" id="popup">
+        <p>supply : 1000</p>
+        <p>per Wallet : 1 + 10</p>
+        <p>price : 1 Free + extra @ 0.01 Eth</p>
         <p>potato Mint Only From Contract. back To Basics?</p>
         <button class="btn" onclick="checkPassword()">Yes lil' shid</button>
     </div>
@@ -187,34 +185,6 @@
           closePopup();
           window.open('mint_link', '_blank');
       }
-
-    var countdownElement = document.getElementById('countdown');
-        var targetDate = new Date('November 19, 2023 08:30:00 EST');
-
-        function updateCountdown() {
-            var currentDate = new Date();
-            var timeDifference = targetDate - currentDate;
-
-            if (timeDifference <= 0) {
-                alert('Countdown reached zero!');
-            } else {
-                var seconds = Math.floor((timeDifference / 1000) % 60);
-                var minutes = Math.floor((timeDifference / (1000 * 60)) % 60);
-                var hours = Math.floor((timeDifference / (1000 * 60 * 60)) % 24);
-
-                countdownElement.textContent = formatTime(hours) + ':' + formatTime(minutes) + ':' + formatTime(seconds);
-
-                setTimeout(updateCountdown, 1000);
-            }
-        }
-
-        function formatTime(value) {
-            return value < 10 ? '0' + value : value;
-        }
-
-        window.onload = function () {
-            updateCountdown();
-        };
       
   </script>
 </body>
