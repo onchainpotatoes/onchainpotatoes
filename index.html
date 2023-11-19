@@ -159,7 +159,7 @@
 
     <a href="#" class="btn" onclick="showPopup()">Mint</a>
   
-    <a href="" class="btn" target="_blank">Code</a>
+    <a href="code_link" class="btn" target="_blank">Code</a>
 
     <div class="overlay" id="overlay" onclick="closePopup()"></div>
     <div class="popup" id="popup">
@@ -168,7 +168,6 @@
         <p>priceReducesBy0.005Every30MinsUntil0.001</p>
         <p>perWallet : 10</p>
         <p>potatoMintOnlyFromContract. backToBasics?</p>
-        <input id="password" placeholder="Yes/No">
         <button class="btn" onclick="checkPassword()">Submit</button>
     </div>
 
@@ -184,14 +183,9 @@
       }
 
       function checkPassword() {
-          var password = document.getElementById('password').value.toLowerCase();
-          if (password === 'yes') {
-              alert('Redirecting');
-              closePopup();
-              window.open('', '_blank');
-          } else {
-              alert('Incorrect password. Try again.');
-          }
+          alert('Redirecting');
+          closePopup();
+          window.open('mint_link', '_blank');
       }
   </script>
 </body>
