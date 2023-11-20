@@ -159,7 +159,9 @@
 
     <a href="#" class="btn" onclick="showPopup()">Mint</a>
   
-    <a href="code_link" class="btn" target="_blank">Code</a>
+<!--     <a href="code_link" class="btn" target="_blank">Code</a> -->
+  
+    <a class="btn" onclick="showPopup()" target="_blank">Code</a>
 
     <div class="overlay" id="overlay" onclick="closePopup()"></div>
     <div class="popup" id="popup">
@@ -172,8 +174,9 @@
 
     <script>
       function showPopup() {
-          document.getElementById('popup').style.display = 'block';
-          document.getElementById('overlay').style.display = 'block';
+          alert("coming soon, update on X");
+          // document.getElementById('popup').style.display = 'block';
+          // document.getElementById('overlay').style.display = 'block';
       }
 
       function closePopup() {
