@@ -188,16 +188,13 @@
 
     <div class="overlay" id="overlay" onclick="closePopup()"></div>
     <div class="popup" id="popup">
-      <p>supply : 1000</p>
-      <p>per Wallet : 1 + 10</p>
-      <p>price : 5 Free + extra @ 0.01 Eth</p>
-      <p>potato Mint Only From Contract. back To Basics?</p>
-      <button class="btn" onclick="checkPassword()">Yes lil' shid</button>
+      <p>Sold Out</p>
+      <button class="btn" onclick="checkPassword()">Opensea</button>
     </div>
 
     <script>
       function showPopup() {
-        // alert("coming soon, update on X");
+        // alert("Sold Out");
         document.getElementById('popup').style.display = 'block';
         document.getElementById('overlay').style.display = 'block';
       }
@@ -209,7 +206,7 @@
 
       function checkPassword() {
         closePopup();
-        window.open("https://etherscan.io/address/0x273806e13f508da73c1d8082f7d8f108439a8019#writeContract#F7", "_blank");
+        window.open("https://opensea.io/collection/onchainpotatoes", "_blank");
       }
     </script>
   </body>
